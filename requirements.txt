@@ -3,4 +3,5 @@ click>=8.0.0
 rich>=13.0.0
 fastmcp>=0.1.0
 httpx>=0.24.0
-asyncio
+pytest>=8.0.0
+python-dotenv>=1.0.0
