@@ -1,0 +1,156 @@
+{
+  "swarm_architecture": "K3-800B-Emulation",
+  "total_agents": 25,
+  "agents": [
+    {
+      "id": "01",
+      "name": "master_planner",
+      "role": "Strategic breakdown and master trajectory orchestration",
+      "file": "02_agents/01_master_planner.py"
+    },
+    {
+      "id": "02",
+      "name": "prompt_architect",
+      "role": "System prompt optimization and structured constraint enforcement",
+      "file": "02_agents/02_prompt_architect.py"
+    },
+    {
+      "id": "03",
+      "name": "context_retriever",
+      "role": "Vector memory query and semantic context assembly",
+      "file": "02_agents/03_context_retriever.py"
+    },
+    {
+      "id": "04",
+      "name": "code_synthesizer",
+      "role": "Algorithmic generation and structural coding implementation",
+      "file": "02_agents/04_code_synthesizer.py"
+    },
+    {
+      "id": "05",
+      "name": "code_debugger",
+      "role": "Static analysis, exception tracing, and regression detection",
+      "file": "02_agents/05_code_debugger.py"
+    },
+    {
+      "id": "06",
+      "name": "code_reviewer",
+      "role": "Code style compliance, standard verification, and sanity checks",
+      "file": "02_agents/06_code_reviewer.py"
+    },
+    {
+      "id": "07",
+      "name": "security_auditor",
+      "role": "Vulnerability scanning, injection prevention, and threat modeling",
+      "file": "02_agents/07_security_auditor.py"
+    },
+    {
+      "id": "08",
+      "name": "test_engineer",
+      "role": "Unit, integration, and property-based test synthesis",
+      "file": "02_agents/08_test_engineer.py"
+    },
+    {
+      "id": "09",
+      "name": "refactoring_specialist",
+      "role": "Code complexity reduction and design pattern harmonization",
+      "file": "02_agents/09_refactoring_specialist.py"
+    },
+    {
+      "id": "10",
+      "name": "system_architect",
+      "role": "Distributed systems design and microservice boundaries",
+      "file": "02_agents/10_system_architect.py"
+    },
+    {
+      "id": "11",
+      "name": "database_engineer",
+      "role": "Schema modeling, query indexing, and persistence verification",
+      "file": "02_agents/11_database_engineer.py"
+    },
+    {
+      "id": "12",
+      "name": "api_integrator",
+      "role": "REST/gRPC interface definitions and client SDK generation",
+      "file": "02_agents/12_api_integrator.py"
+    },
+    {
+      "id": "13",
+      "name": "performance_optimizer",
+      "role": "Memory profiling, algorithmic complexity, and cache policies",
+      "file": "02_agents/13_performance_optimizer.py"
+    },
+    {
+      "id": "14",
+      "name": "devops_automator",
+      "role": "CI/CD pipelines, containerization, and orchestration manifests",
+      "file": "02_agents/14_devops_automator.py"
+    },
+    {
+      "id": "15",
+      "name": "documentation_writer",
+      "role": "Markdown docs, OpenAPI specs, and developer onboarding guides",
+      "file": "02_agents/15_documentation_writer.py"
+    },
+    {
+      "id": "16",
+      "name": "research_analyst",
+      "role": "Technical literature synthesis and benchmark evaluation",
+      "file": "02_agents/16_research_analyst.py"
+    },
+    {
+      "id": "17",
+      "name": "data_scientist",
+      "role": "Data pipeline transforms, statistical models, and validation",
+      "file": "02_agents/17_data_scientist.py"
+    },
+    {
+      "id": "18",
+      "name": "nlp_specialist",
+      "role": "Token distribution shaping and linguistic coherence control",
+      "file": "02_agents/18_nlp_specialist.py"
+    },
+    {
+      "id": "19",
+      "name": "vision_processor",
+      "role": "Multimodal tensor mapping and visual asset validation",
+      "file": "02_agents/19_vision_processor.py"
+    },
+    {
+      "id": "20",
+      "name": "logic_verifier",
+      "role": "Formal logic validation and constraint satisfaction checking",
+      "file": "02_agents/20_logic_verifier.py"
+    },
+    {
+      "id": "21",
+      "name": "edge_case_hunter",
+      "role": "Boundary condition identification and stress test planning",
+      "file": "02_agents/21_edge_case_hunter.py"
+    },
+    {
+      "id": "22",
+      "name": "dependency_manager",
+      "role": "Package version compatibility, lockfile audit, and resolution",
+      "file": "02_agents/22_dependency_manager.py"
+    },
+    {
+      "id": "23",
+      "name": "benchmarking_expert",
+      "role": "Throughput, latency, and resource footprint profiling",
+      "file": "02_agents/23_benchmarking_expert.py"
+    },
+    {
+      "id": "24",
+      "name": "synthesis_director",
+      "role": "Multi-agent consensus aggregation and unified conflict resolution",
+      "file": "02_agents/24_synthesis_director.py"
+    },
+    {
+      "id": "25",
+      "name": "final_validator",
+      "role": "End-to-end acceptance certification and final output release",
+      "file": "02_agents/25_final_validator.py"
+    }
+  ]
+}

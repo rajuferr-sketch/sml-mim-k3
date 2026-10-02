@@ -1,0 +1,35 @@
+[
+  {
+    "name": "run_k3_swarm",
+    "description": "Execute task on K3 800B emulated 25-agent terminal swarm",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "task": {
+          "type": "string",
+          "description": "The complex prompt or coding task to execute"
+        },
+        "mode": {
+          "type": "string",
+          "enum": [
+            "swarm",
+            "consensus",
+            "sequential"
+          ],
+          "default": "swarm"
+        }
+      },
+      "required": [
+        "task"
+      ]
+    }
+  },
+  {
+    "name": "get_swarm_status",
+    "description": "Retrieve status and agent manifest of K3 swarm",
+    "parameters": {
+      "type": "object",
+      "properties": {}
+    }
+  }
+]
