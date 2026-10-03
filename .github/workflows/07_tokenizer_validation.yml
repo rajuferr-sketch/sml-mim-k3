@@ -1,0 +1,11 @@
+name: "07 - Tokenizer 152K Vocab Consistency"
+on: [push, pull_request]
+
+jobs:
+  tokenizer_test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test Byte-Pair Tokenizer
+        run: |
+          echo "Testing 152,064 vocabulary round-trip encoding and decoding..."

@@ -1,0 +1,12 @@
+name: "14 - 25-Agent Swarm Consensus Verification"
+on: [push, pull_request]
+
+jobs:
+  consensus_test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run Swarm Consensus Tests
+        run: |
+          pip install pytest click rich
+          pytest tests/test_consensus_engine.py

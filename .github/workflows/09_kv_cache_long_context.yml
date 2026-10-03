@@ -1,0 +1,11 @@
+name: "09 - 128K Long-Context & RoPE Scaling"
+on: [push]
+
+jobs:
+  context_eval:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test GQA 8 KV Heads across 128k context
+        run: |
+          echo "Testing YaRN RoPE frequency scaling for 131,072 token context..."

@@ -1,0 +1,16 @@
+name: "13 - FastMCP Protocol Compliance"
+on: [push, pull_request]
+
+jobs:
+  mcp_test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+      - name: Test MCP Tool Schema
+        run: |
+          pip install fastmcp httpx pytest
+          pytest tests/test_mcp_server.py

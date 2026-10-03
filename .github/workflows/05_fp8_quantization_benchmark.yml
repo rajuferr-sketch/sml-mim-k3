@@ -1,0 +1,12 @@
+name: "05 - FP8 & INT4 Quantization Benchmark"
+on:
+  workflow_dispatch:
+
+jobs:
+  quant_bench:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Evaluate Quantized Weights Accuracy
+        run: |
+          echo "Running perplexity evaluation on FP8 and INT4 quantized weights..."

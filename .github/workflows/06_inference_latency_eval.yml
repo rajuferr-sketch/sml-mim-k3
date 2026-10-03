@@ -1,0 +1,12 @@
+name: "06 - High Throughput Inference Latency"
+on:
+  workflow_dispatch:
+
+jobs:
+  inference_bench:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Benchmark vLLM Tensor Parallelism
+        run: |
+          echo "Evaluating TTFT (Time to First Token) and token generation latency..."

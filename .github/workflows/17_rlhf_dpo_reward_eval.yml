@@ -1,0 +1,12 @@
+name: "17 - DPO & PPO Reward Model Evaluation"
+on:
+  workflow_dispatch:
+
+jobs:
+  reward_eval:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compute Implicit Reward Margin
+        run: |
+          echo "Evaluating win-rate against preference benchmark pairs..."

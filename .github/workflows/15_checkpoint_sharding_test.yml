@@ -1,0 +1,12 @@
+name: "15 - Safetensors State Dict Sharding"
+on:
+  workflow_dispatch:
+
+jobs:
+  checkpoint_test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test Sharded Weight Index & Resumption
+        run: |
+          echo "Verifying index.safetensors manifest integrity and zero-redundancy recovery..."

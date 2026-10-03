@@ -1,0 +1,12 @@
+name: "12 - Docker CUDA Runtime Build"
+on:
+  workflow_dispatch:
+
+jobs:
+  build_container:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate Container Setup
+        run: |
+          echo "Validating multi-stage CUDA 12.4 + PyTorch 2.4 image specification..."

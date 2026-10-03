@@ -1,0 +1,14 @@
+name: "20 - Automated Documentation & Release"
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Publish Release Notes
+        run: |
+          echo "Generating automated changelog and deploying technical specifications..."

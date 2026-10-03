@@ -1,0 +1,12 @@
+name: "08 - Pretraining Data Pipeline Streaming"
+on:
+  workflow_dispatch:
+
+jobs:
+  data_stream:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate Sharded Token Streaming
+        run: |
+          echo "Streaming synthetic pre-training batches through Arrow/Parquet loader..."

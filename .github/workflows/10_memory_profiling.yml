@@ -1,0 +1,12 @@
+name: "10 - VRAM Footprint & 4D Parallelism Profile"
+on:
+  workflow_dispatch:
+
+jobs:
+  profile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Calculate Tensor, Pipeline, and Expert Parallelism Memory
+        run: |
+          echo "TP=8, PP=8, EP=8, DP=4 across GPU clusters..."

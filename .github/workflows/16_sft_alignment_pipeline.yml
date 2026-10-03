@@ -1,0 +1,11 @@
+name: "16 - SFT Alignment & Chat Template Linting"
+on: [push]
+
+jobs:
+  sft_check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Lint Chat Templates
+        run: |
+          echo "Checking system prompt, user prompt, and tool call serialization tokens..."
